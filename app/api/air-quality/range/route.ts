@@ -1,5 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server"
 
+export const dynamic = 'force-dynamic'
 export const revalidate = 3600 // Revalidate every hour (range data changes less frequently)
 
 export async function GET(request: NextRequest) {

@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { DM_Sans } from "next/font/google"
 import { GeistMono } from "geist/font/mono"
 import "./globals.css"
@@ -18,7 +18,11 @@ export const metadata: Metadata = {
   generator: "v0.app",
   keywords: ["air quality", "environmental monitoring", "dashboard", "real-time data", "analytics"],
   authors: [{ name: "Air Quality Monitor Team" }],
-  viewport: "width=device-width, initial-scale=1",
+}
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 }
 
 export default function RootLayout({

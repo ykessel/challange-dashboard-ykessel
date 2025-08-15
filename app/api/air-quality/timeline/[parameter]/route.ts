@@ -1,5 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server"
 
+export const dynamic = 'force-dynamic'
 export const revalidate = 600 // Revalidate every 10 minutes (timeline data changes more frequently)
 
 export async function GET(request: NextRequest, { params }: { params: Promise<{ parameter: string }> }) {
